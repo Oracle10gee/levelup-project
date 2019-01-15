@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 0px;
+  height: 300px; 
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.heading{color: grey; margin: 0px;text-align: left;}
+
+
+#heading{color: grey; margin: 0px;text-align: left;}
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<div class="row">
+  <div class="column" style="background-color: 0;">
+
+    <img src="bird-image.jpg" alt="bird-image">
+    <h2 id="heading">Maecanas mattis egestas</h2>
+    <p class="heading">Erdum et malesuada fames ac ante ipsum<br>in faucibus uspendisse porta</p>
+  </div>
+  
+
+  <div class="column" style="background-color:0;color: grey;text-align: center;">
+
+    <img src="logo.jpg" alt="love bird logo" style="margin: 70px;">
+    <h2 style="margin: 70px;">Welcome to Love birds</h2>
+    
+    <form action="action_page.php">
+      Username or Email<br>
+      <input type="text" name="first name" value="David brooks" style="border: 1px solid grey;">
+      <br>
+      Password<br>
+      <input type="text" name="Password" value="*********">
+      <br><br>
+      <input type="submit" value="sign in">
+    </form>
+
+    <a href="google.com">
+      <img src="signin-with-google.jpg" alt="goole link" style="margin: 50px;">
+    </a> 
+
+    <p class="footer">New lovebirds?<a href="lovebirds.com">Create Account</a></p>
+
+
+
+  </div>
+</div>
+  
+</div>
+</body>
+</html>
